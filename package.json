@@ -1,0 +1,21 @@
+{
+  "name": "nextra-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages",
+    "start": "next start",
+    "debug": "NODE_OPTIONS='--inspect' next dev",
+    "vercel-build": "yarn workspace nextra run build && yarn workspace nextra-theme-docs run build && yarn build",
+    "clean": "rimraf .next .turbo"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.2.1",
+    "next": "^13.4.1",
+    "nextra": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
