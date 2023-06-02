@@ -20,6 +20,7 @@ function Layout({ pageOpts, children }) {
       </Head>
       <div>
         <navbar className={styles.navbar}>
+          <a className="mt-3 max-w-4xl text-3xl font-extrabold">Nextra</a>
           <h2>This is the navbar</h2>
         </navbar>
         <main className={styles.main}>
