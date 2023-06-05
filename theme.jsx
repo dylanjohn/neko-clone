@@ -18,21 +18,14 @@ function Layout({ pageOpts, children }) {
       <Head>
         <title>{pageOpts.title}</title>
       </Head>
-      <div>
-        <navbar className={styles.navbar}>
-          <a className="mt-3 max-w-4xl text-3xl font-extrabold">Nextra</a>
+      <div className="max-w-2xl mx-auto w-full">
+        <navbar>
+          <Link href='/'>Nextra</Link>
           <h2>This is the navbar</h2>
+          <Link href='/'>Home</Link>
+          <Link href='/docs/v19/globals'>Globals</Link>
         </navbar>
-        <main className={styles.main}>
-          <aside className={styles.sidebar}>
-            <h3>Navigation</h3>
-            <div>
-              <Link href='/'>Home</Link>
-            </div>
-            <div>
-              <Link href='/docs/v19/globals'>Globals</Link>
-            </div>
-          </aside>
+        <main>
           <article>
             <MDXProvider
               components={{
@@ -53,18 +46,18 @@ function Layout({ pageOpts, children }) {
               {children}
             </MDXProvider>
             
-          {/* {posts.posts.map((p) => (
-            <li key={p.slug} className="flex items-center space-x-3">
-              <span className="block text-gray-500 w-[9.5rem] text-right">
-                  {p.date}
-              </span>
-                <Link href={p.slug}>
-                <span className="block font-bold">{p.title}</span>
-              </Link>
+            {posts.posts.map((p) => (
+              <li key={p.slug} className="flex items-center space-x-3">
+                <span className="block text-gray-500 w-[9.5rem] text-right">
+                    {p.date}
+                </span>
+                  <Link href={p.slug}>
+                  <span className="block font-bold">{p.title}</span>
+                </Link>
               </li>
-            ))} */}
+            ))}
             
-    
+
           </article>
         </main>
         <footer>This is the footer</footer>
