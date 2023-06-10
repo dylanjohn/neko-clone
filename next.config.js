@@ -1,6 +1,6 @@
 const withNextra = require('nextra')({
   // Tell Nextra to use the custom theme as the layout
-  theme: './theme.jsx',
+  theme: './components/theme.jsx',
 })
 
 const isProd = process.env.NODE_ENV === 'production'
