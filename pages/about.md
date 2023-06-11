@@ -5,7 +5,7 @@ trademark: Trademark
 
 # About
 
-<button>SASS, CSS modules, JSX inside Markdown</button>
+SASS, CSS modules, JSX inside Markdown
 
 I am going to the movies today.
 

@@ -8,11 +8,11 @@ export default function Posts() {
         <ul>
           {posts.posts.map((p) => (
             <li key={p.slug}>
-              {/* <span className="block text-gray-500 w-[9.5rem] text-right">
+              <span className="block">
                 {p.date}
-              </span> */}
+              </span>
               <Link href={p.slug}>
-              <span className="block font-bold">{p.title}</span>
+              <span className="block">{p.title}</span>
             </Link>
             </li>
           ))}

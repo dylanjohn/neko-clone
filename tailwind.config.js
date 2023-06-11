@@ -30,7 +30,7 @@ module.exports = {
               fontWeight: 'normal',
             },
             pre: {
-              opacity: 0.98,
+              // opacity: 0.98,
               background: theme('colors.gray.100'),
               lineHeight: 2,
             },

@@ -19,14 +19,14 @@ function Layout({ pageOpts, children }) {
       <Head>
         <title>{pageOpts.title}</title>
       </Head>
-      <div className="prose lg:prose-lg prose-zinc container mt-4 sm:mt-12 px-4 mx-auto mb-6 w-full px-4">
+      <div className="prose lg:prose-lg prose-stone container mt-4 sm:mt-12 px-4 mx-auto mb-6 w-full">
         <Header />
         <main>
           <article>
             <MDXProvider
               components={{
                 // You can add custom components here for MDX
-                h1: (props) => <h1 className="mb-0" {...props} />,
+                h1: (props) => <h1 className="" {...props} />,
                 pre: ({ filename, ...props }) => {
                   return (
                     <div className={styles.codeblock}>
