@@ -19,7 +19,7 @@ function Layout({ pageOpts, children }) {
       <Head>
         <title>{pageOpts.title}</title>
       </Head>
-      <div className="max-w-2xl mx-auto w-full px-4">
+      <div className="prose lg:prose-lg prose-zinc container mt-4 sm:mt-12 px-4 mx-auto mb-6 w-full px-4">
         <Header />
         <main>
           <article>
@@ -39,7 +39,7 @@ function Layout({ pageOpts, children }) {
                 },
               }}
             >
-              <div className="prose lg:prose-xl prose-stone">
+              <div className="">
                 {children}
               </div>
             </MDXProvider>

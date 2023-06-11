@@ -7,23 +7,36 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        gray: {
-          0: '#fff',
-          100: '#fafafa',
-          200: '#eaeaea',
-          300: '#999999',
-          400: '#888888',
-          500: '#666666',
-          600: '#444444',
-          700: '#333333',
-          800: '#222222',
-          900: '#111111',
-        },
-      },
+      colors: {},
       typography: (theme) => ({
         DEFAULT: {
-          css: {},
+          css: {
+            // pre: false,
+            // code: false
+            a: {
+              color: theme('colors.indigo.500'),
+              '&:hover': {
+                  color: theme('colors.indigo.700'),
+              },
+            },
+            code: {
+              color: '#86e1fc',
+              '&::before': {
+                content: `"" !important`,
+              },
+              '&::after': {
+                content: `"" !important`,
+              },
+              fontWeight: 'normal',
+            },
+            pre: {
+              opacity: 0.98,
+              background: theme('colors.gray.100'),
+              lineHeight: 2,
+            },
+          
+            // end css
+          },
         },
       }),
     },
