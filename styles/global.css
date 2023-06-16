@@ -8,6 +8,7 @@ body {
   margin: 0;
 }
 
+
 /* https://nextra.site/docs/guide/syntax-highlighting */
 :root {
   --shiki-color-text: #414141;

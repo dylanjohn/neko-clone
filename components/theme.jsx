@@ -15,11 +15,11 @@ function Layout({ pageOpts, children }) {
   // You can build the sidebar based on the structure data from `pageMap`:
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen bg-gray-100">
       <Head>
         <title>{pageOpts.title}</title>
       </Head>
-      <div className="prose lg:prose-lg prose-stone container mt-4 sm:mt-12 px-4 mx-auto mb-6 w-full">
+      <div className="prose lg:prose-lg prose-zinc container px-4 mx-auto mb-6 w-full">
         <Header />
         <main>
           <article>
@@ -48,7 +48,7 @@ function Layout({ pageOpts, children }) {
         </main>
         {/* <footer>This is the footer</footer> */}
       </div>
-    </>
+    </div>
   )
 }
 
