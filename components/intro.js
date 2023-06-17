@@ -13,7 +13,7 @@ export default function Intro() {
             Making web applications with Next.js / Astro
           </p>
         </div>
-        <div className="w-36 relative mb-8 sm:mb-0">
+        <div className="w-36 relative">
           <Image src="/dylanjohn-dev/images/kyoya.jpg" alt="Example Image" width={300} height={300} className="rounded-full !mt-0"/>
         </div>
       </div>
