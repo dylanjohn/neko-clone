@@ -43,7 +43,7 @@ export default function Toggle() {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          className="h-5 w-5 text-gray-800 dark:text-gray-200"
+          className="h-5 w-5 text-gray-800"
         >
           <path
             className="inline"

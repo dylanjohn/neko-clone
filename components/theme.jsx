@@ -15,7 +15,7 @@ function Layout({ pageOpts, children }) {
   // You can build the sidebar based on the structure data from `pageMap`:
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100">
+    <div className="flex flex-col min-h-screen">
       <Head>
         <title>{pageOpts.title}</title>
       </Head>
