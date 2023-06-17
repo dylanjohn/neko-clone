@@ -19,14 +19,14 @@ function Layout({ pageOpts, children }) {
       <Head>
         <title>{pageOpts.title}</title>
       </Head>
-      <div className="prose lg:prose-lg prose-zinc container px-4 mx-auto mb-6 w-full">
+      <div className="flex flex-col flex-grow prose lg:prose-lg prose-stone dark:prose-invert container px-4 mx-auto mb-6 w-full">
         <Header />
-        <main>
+        <main className="flex-grow">
           <article>
             <MDXProvider
               components={{
                 // You can add custom components here for MDX
-                h1: (props) => <h1 className="" {...props} />,
+                h1: (props) => <h1 {...props} />,
                 pre: ({ filename, ...props }) => {
                   return (
                     <div className={styles.codeblock}>
@@ -39,14 +39,13 @@ function Layout({ pageOpts, children }) {
                 },
               }}
             >
-              <div className="">
-                {children}
-              </div>
+              {children}
             </MDXProvider>
-            {/* <Posts /> */}
           </article>
         </main>
-        {/* <footer>This is the footer</footer> */}
+        <footer className="mt-auto text-center">
+          <p>2023 © Aenean Blog</p>
+        </footer>
       </div>
     </div>
   )

@@ -3,13 +3,12 @@ title: Hello
 trademark: Trademark
 ---
 
-import styles from '../components/theme.module.css'
+import Intro from '../components/intro.js'
 import Posts from '../components/posts.js'
 
-# Hello World
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit 🤣, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+<Intro />
 
 ## Latest Posts
 
 <Posts />
+

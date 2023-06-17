@@ -8,12 +8,12 @@ export default function Posts() {
       <ul>
         {posts.posts.map((p) => (
           <li key={p.slug}>
+            <Link href={p.slug}>
+              <span className="block">{p.title}</span>
+            </Link>
             <span className="block">
               {p.date}
             </span>
-            <Link href={p.slug}>
-            <span className="block">{p.title}</span>
-          </Link>
           </li>
         ))}
       </ul>

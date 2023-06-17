@@ -36,9 +36,6 @@ module.exports = {
                 marginTop: em(24, 18),
                 marginBottom: em(24, 18),
               },
-              h1: {
-                marginBottom: em(40, 48),
-              },
               h2: {
                 marginBottom: em(32, 30),
               },
@@ -55,16 +52,14 @@ module.exports = {
             h2: {
               fontWeight: '600',
             },
-            p: {
-              color: theme('colors.gray.600'),
-            },
             ul: {
               color: theme('colors.gray.600'),
             },
             a: {
-              color: theme('colors.indigo.500'),
+              color: theme('colors.blue.500'),
+
               '&:hover': {
-                  color: theme('colors.indigo.700'),
+                  color: theme('colors.blue.700'),
               },
             },
             code: {
