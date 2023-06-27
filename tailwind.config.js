@@ -57,10 +57,14 @@ module.exports = {
             },
             a: {
               color: theme('colors.blue.500'),
+              fontWeight: 400,
 
               '&:hover': {
                   color: theme('colors.blue.700'),
               },
+            },
+            body: {
+              color: '#44403c',
             },
             code: {
               color: '#86e1fc',

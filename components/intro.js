@@ -7,7 +7,7 @@ export default function Intro() {
       <div className="flex flex-col-reverse sm:flex-row sm:justify-between">
         <div className="flex flex-col pr-8">
           <h1 className="!mb-0">Hello World</h1>
-          <span>Full Stack Web Developer</span>
+          <p className="lead !mt-2">Full Stack Web Developer</p>
           <p>
             Aliquam sit amet nulla eu massa<br />
             Making web applications with Next.js / Astro

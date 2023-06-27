@@ -24,7 +24,7 @@ export default function Header() {
 				href={item.href}
 				className={classNames(
 					"inline-block px-3 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-900 transition-colors no-underline",
-					item.href === "/" ? router.pathname === item.href ? "text-gray-900 font-semibold" : "text-gray-500" : router.asPath.startsWith(item.href) ? "text-gray-900 font-semibold" : "text-gray-500"
+					item.href === "/" ? router.pathname === item.href ? "text-gray-900" : "" : router.asPath.startsWith(item.href) ? "text-gray-900" : ""
 				)}
 				aria-current={router.pathname === item.href ? "page" : undefined}
 				>

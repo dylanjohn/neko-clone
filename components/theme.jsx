@@ -19,7 +19,7 @@ function Layout({ pageOpts, children }) {
       <Head>
         <title>{pageOpts.title}</title>
       </Head>
-      <div className="flex flex-col flex-grow prose lg:prose-lg prose-stone container px-4 mx-auto mb-6 w-full">
+      <div className="flex flex-col flex-grow prose prose-lg lg:prose-xl prose-stone container px-4 mx-auto mb-6 w-full">
         <Header />
         <main className="flex-grow">
           <article>
