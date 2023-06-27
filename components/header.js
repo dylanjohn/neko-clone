@@ -16,7 +16,7 @@ export default function Header() {
    const router = useRouter();
 
    return (
-	<div className="navbar py-6 pb-8 sm:py-12 sm:pb-16 flex items-center justify-between">
+	<div className="navbar py-6 pb-12 sm:py-12 sm:pb-16 flex items-center justify-between">
 		<div className="ml-[-0.60rem]">
 			{navigation.map((item) => (
 				<Link
