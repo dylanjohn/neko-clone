@@ -1,6 +1,10 @@
+
 const withNextra = require('nextra')({
   // Tell Nextra to use the custom theme as the layout
   theme: './components/theme.jsx',
+  // mdxOptions: {
+  //   rehypePlugins,
+  // },
 })
 
 const isProd = process.env.NODE_ENV === 'production'

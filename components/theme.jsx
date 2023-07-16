@@ -19,7 +19,7 @@ function Layout({ pageOpts, children }) {
       <Head>
         <title>{pageOpts.title}</title>
       </Head>
-      <div className="flex flex-col flex-grow prose prose-lg lg:prose-xl prose-stone container px-4 mx-auto mb-6 w-full">
+      <div className="flex flex-col flex-grow prose prose-lg lg:prose-lg prose-stone container px-4 mx-auto mb-6 w-full">
         <Header />
         <main className="flex-grow">
           <article>
@@ -29,9 +29,9 @@ function Layout({ pageOpts, children }) {
                 h1: (props) => <h1 {...props} />,
                 pre: ({ filename, ...props }) => {
                   return (
-                    <div className={styles.codeblock}>
+                    <div className="{styles.codeblock}">
                       {filename ? (
-                        <div className={styles.filename}>{filename}</div>
+                        <div className="prose-none">{filename}</div>
                       ) : null}
                       <pre {...props} />
                     </div>

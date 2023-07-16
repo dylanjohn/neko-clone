@@ -25,7 +25,9 @@ module.exports = {
         gray: {
           0: '#fff',
           100: '#fafafa',
-          200: '#eaeaea',
+          // 200: '#eaeaea',
+          600: '#57534E',
+          950: '#09090b',
         },
       },
       typography: (theme) => ({
@@ -64,7 +66,7 @@ module.exports = {
               },
             },
             body: {
-              color: '#44403c',
+              color:theme('colors.gray.600'),
             },
             code: {
               color: '#86e1fc',
