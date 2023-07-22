@@ -18,8 +18,9 @@ function Layout({ pageOpts, children }) {
     <div className="flex flex-col min-h-screen">
       <Head>
         <title>{pageOpts.title}</title>
+        <link rel="icon" href="./favicon.png" />
       </Head>
-      <div className="flex flex-col flex-grow prose prose-lg lg:prose-lg prose-stone container px-4 mx-auto mb-6 w-full">
+      <div className="flex flex-col flex-grow prose lg:prose-lg prose-neutral container px-5 mx-auto mb-6 w-full">
         <Header />
         <main className="flex-grow">
           <article>
@@ -29,7 +30,7 @@ function Layout({ pageOpts, children }) {
                 h1: (props) => <h1 {...props} />,
                 pre: ({ filename, ...props }) => {
                   return (
-                    <div className="{styles.codeblock}">
+                    <div>
                       {filename ? (
                         <div className="prose-none">{filename}</div>
                       ) : null}
@@ -44,7 +45,7 @@ function Layout({ pageOpts, children }) {
           </article>
         </main>
         <footer className="mt-auto text-center">
-          <p>2023 © Aenean Blog</p>
+          <p className="text-gray-400">2023 © Dylan Prehn</p>
         </footer>
       </div>
     </div>

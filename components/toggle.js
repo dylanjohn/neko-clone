@@ -6,7 +6,7 @@ export default function Toggle() {
       <button
         id="toggle-theme"
         type="button"
-        className="flex h-9 w-9 shrink-0 touch-manipulation items-center justify-center rounded-md bg-gray-200 ring-gray-300 transition-all hover:ring-2"
+        className="flex h-9 w-9 shrink-0 touch-manipulation items-center justify-center rounded-md bg-gray-100 hover:bg-gray-100 ring-gray-200 transition-all hover:ring-2"
         title="Toggle theme"
       >
         <svg

@@ -8,6 +8,7 @@ const round = (num) =>
 const rem = (px) => `${round(px / 16)}rem`
 const em = (px, base) => `${round(px / base)}em`
 
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,16 +19,17 @@ module.exports = {
   theme: {
     fontFamily: {
       // sans: [ 'IBM Plex Sans', ...fontFamily.sans],
-      mono: ['Fira Code', ...fontFamily.mono],
+      mono: [...fontFamily.mono],
     },
     extend: {
       colors: {
         gray: {
           0: '#fff',
-          100: '#fafafa',
-          // 200: '#eaeaea',
+          // 100: '#fafafa',
+          // 100: '#fbfaf9',
+          // 200: '#E8E8E8',
           600: '#57534E',
-          950: '#09090b',
+          950: '#1a202c',
         },
       },
       typography: (theme) => ({
@@ -38,8 +40,12 @@ module.exports = {
                 marginTop: em(24, 18),
                 marginBottom: em(24, 18),
               },
+              h1: {
+                fontSize: em(40, 18),
+              },
               h2: {
-                marginBottom: em(32, 30),
+                marginTop: em(30, 20),
+                marginBottom: em(16, 20),
               },
             },
           ],
@@ -47,29 +53,16 @@ module.exports = {
         DEFAULT: {
           css: {
             // pre: false,
-            // code: false
-            h1: {
-              fontWeight: '600',
-            },
-            h2: {
-              fontWeight: '600',
-            },
-            ul: {
-              color: theme('colors.gray.600'),
-            },
-            a: {
-              color: theme('colors.blue.500'),
-              fontWeight: 400,
-
-              '&:hover': {
-                  color: theme('colors.blue.700'),
-              },
-            },
-            body: {
-              color:theme('colors.gray.600'),
-            },
+            // code: false,
             code: {
-              color: '#86e1fc',
+              backgroundColor: theme('colors.gray.100'),
+              color: theme('colors.gray.600'),
+              paddingLeft: '4px',
+              paddingRight: '4px',
+              paddingTop: '2px',
+              paddingBottom: '2px',
+              borderRadius: '0.25rem',
+              fontSize: '85% !important',
               '&::before': {
                 content: `"" !important`,
               },
@@ -80,9 +73,33 @@ module.exports = {
             },
             pre: {
               // opacity: 0.98,
-              background: theme('colors.gray.100'),
-              lineHeight: 2,
+              background: theme('colors.white'),
+              borderColor: theme('colors.gray.200'),
+              border: '1px solid',
             },
+            h1: {
+              fontWeight: '600',
+            },
+            h2: {
+              fontWeight: '600',
+            },
+            ul: {
+              color: theme('colors.gray.600'),
+            },
+            a: {
+              color: theme('colors.black'),
+              fontWeight: 400,
+
+              '&:hover': {
+                  color: theme('colors.black'),
+              },
+            },
+            body: {
+              color:theme('colors.gray.600'),
+            },
+            blockquote: {
+              color:theme('colors.gray.600'),
+            }
             // end css
           },
         },

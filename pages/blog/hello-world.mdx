@@ -7,9 +7,7 @@ slug: /blog/hello-World
 
 # Table of Contents
 
-## Paragraphs
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit 🤣, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id donec ultrices tincidunt arcu non sodales neque sodales. Adipiscing diam donec adipiscing tristique risus nec feugiat in.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id donec ultrices tincidunt arcu non sodales neque sodales. Adipiscing diam donec adipiscing tristique risus nec feugiat in.
 
 ## Line Break
 
@@ -72,20 +70,22 @@ Start numbering with offset:
 
 ### Code Block
 
-```
-Sample text here...
-```
+This is really `Sample text`
+
+Start by importing wagmi and ConnectKit, then create a config using either wagmi's `createConfig` method or the pre-configured 
 
 ```bash title="Terminal"
 pnpm build
 ```
 
 ```jsx title="Counter.tsx" showLineNumbers {4}
-import { createSignal } from 'solid-js'
+const btn = document.getElementById('btn')
+let count = 0
 
+// This is a comment
 export default function Counter() {
   const [count, setCount] = createSignal(0)
-
+  btn.innerText = `Count: ${count}`;
   const add = () => setCount((i) => i + 1)
 
   return (

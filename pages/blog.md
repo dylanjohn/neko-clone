@@ -1,9 +1,9 @@
 ---
-title: Articles
+title: Posts
 ---
 
 import Posts from '../components/posts.js'
 
-# Articles
+# Posts
 
 <Posts />

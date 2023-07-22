@@ -8,7 +8,7 @@ import Posts from '../components/posts.js'
 
 <Intro />
 
-## Latest Posts
+### Latest Posts
 
 <Posts />
 

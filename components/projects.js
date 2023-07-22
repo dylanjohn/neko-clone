@@ -1,11 +1,11 @@
 import Link from "next/link";
 import posts from '../posts.json';
 
-export default function Posts() {
+export default function Projects() {
 
   return (
     <>
-      <ul className="flat">
+      <ul className="space-y-4">
         {posts.posts.map((p) => (
           <li key={p.slug}>
             <Link href={p.slug}>
@@ -17,6 +17,7 @@ export default function Posts() {
           </li>
         ))}
       </ul>
+      
     </>
   );
 }
