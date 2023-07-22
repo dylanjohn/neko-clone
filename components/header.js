@@ -29,7 +29,7 @@ export default function Header() {
 			key={item.name}
 			href={item.href}
 			className={classNames(
-				"inline-block px-3 py-2 rounded-md hover:bg-gray-100 transition-colors no-underline",
+				"inline-block px-3 py-2 rounded-md lg:hover:bg-gray-100 transition-colors no-underline",
 				item.href === "/"
 				? router.pathname === item.href
 					? "text-gray-950 font-semibold hover:text-gray-950"

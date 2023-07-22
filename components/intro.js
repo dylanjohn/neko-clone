@@ -9,7 +9,9 @@ export default function Intro() {
           <h1 className="">Hello World</h1>
           {/* <p className="lead !mt-2">Full Stack Web Developer</p> */}
           <p className="max-w-md !mt-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.<br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+          </p>
+          <p className="max-w-md !mt-0">
             Get in touch via email <a href="mailto:hi@dylanjohn.dev">hi@dylanjohn.dev.</a>
           </p>
          

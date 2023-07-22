@@ -20,7 +20,7 @@ function Layout({ pageOpts, children }) {
         <title>{pageOpts.title}</title>
         <link rel="icon" href="./favicon.png" />
       </Head>
-      <div className="flex flex-col flex-grow prose lg:prose-lg prose-neutral container px-5 mx-auto mb-6 w-full">
+      <div className="flex flex-col flex-grow prose prose-lg prose-neutral container px-5 mx-auto mb-6 w-full">
         <Header />
         <main className="flex-grow">
           <article>
@@ -30,7 +30,7 @@ function Layout({ pageOpts, children }) {
                 h1: (props) => <h1 {...props} />,
                 pre: ({ filename, ...props }) => {
                   return (
-                    <div>
+                    <div className="{styles.codeblock}">
                       {filename ? (
                         <div className="prose-none">{filename}</div>
                       ) : null}
