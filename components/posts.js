@@ -11,7 +11,7 @@ export default function Posts() {
             <Link href={p.slug}>
               <span className="block">{p.title}</span>
             </Link>
-            <span className="block">
+            <span className="block text-gray-500">
               {p.date}
             </span>
           </li>

@@ -14,12 +14,12 @@ export default function Intro() {
           <p className="max-w-md !mt-0">
             Get in touch via email <a href="mailto:hi@dylanjohn.dev">hi@dylanjohn.dev.</a>
           </p>
-         
         </div>
         <div className="w-36 relative mb-6 lg:mb-0">
           <Image src="/dylanjohn-dev/images/kyoya.jpg" alt="Example Image" width={300} height={300} className="rounded-full !mt-0 !mb-0"/>
         </div>
       </div>
+      {/* <hr/> */}
     </>
   );
 }

@@ -2,12 +2,12 @@
   "posts": [
     {
       "slug": "/blog/hello-world",
-      "date": "December 23, 2020",
+      "date": "2 Dec, 2020",
       "title": "Hello World"
     },
     {
       "slug": "/blog/another-one",
-      "date": "June 16, 2020",
+      "date": "10 June, 2020",
       "title": "How to configure Nextra theme"
     }
   ]

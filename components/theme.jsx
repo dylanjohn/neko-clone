@@ -45,7 +45,7 @@ function Layout({ pageOpts, children }) {
           </article>
         </main>
         <footer className="mt-auto text-center">
-          <p className="text-gray-400">2023 © Dylan Prehn</p>
+          <p className="text-gray-500">2023 © Dylan Prehn</p>
         </footer>
       </div>
     </div>

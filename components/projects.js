@@ -5,19 +5,15 @@ export default function Projects() {
 
   return (
     <>
-      <ul className="space-y-4">
+      <div className="space-y-12">
         {posts.posts.map((p) => (
-          <li key={p.slug}>
+          <div key={p.slug} className="p-8 border border-gray-300 rounded-md h-64">
             <Link href={p.slug}>
               <span className="block">{p.title}</span>
             </Link>
-            <span className="block">
-              {p.date}
-            </span>
-          </li>
+          </div>
         ))}
-      </ul>
-      
+      </div>
     </>
   );
 }

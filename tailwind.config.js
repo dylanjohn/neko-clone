@@ -26,10 +26,20 @@ module.exports = {
         gray: {
           0: '#fff',
           // 100: '#fafafa',
-          // 100: '#fbfaf9',
-          // 200: '#E8E8E8',
-          600: '#57534E',
+          100: '#fbfaf9',
+          200: '#f5f5f5',
+          // 300: '#e5e5e5',
+          300: '#e8e9e9',
+          400: '#d4d4d4',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
           950: '#1a202c',
+        },
+        blue: {
+          // 600: '#1A88F8',
         },
       },
       typography: (theme) => ({
@@ -43,9 +53,10 @@ module.exports = {
               h1: {
                 fontSize: em(40, 18),
               },
-              h2: {
-                marginTop: em(30, 20),
-                marginBottom: em(16, 20),
+              h3: {
+                fontSize: em(24, 18),
+                // marginTop: em(56, 30),
+                // marginBottom: em(32, 30),
               },
             },
           ],
@@ -55,14 +66,15 @@ module.exports = {
             // pre: false,
             // code: false,
             code: {
-              backgroundColor: theme('colors.gray.100'),
-              color: theme('colors.gray.600'),
-              paddingLeft: '4px',
-              paddingRight: '4px',
+              backgroundColor: theme('colors.gray.200'),
+              // border: '1px solid',
+              // borderColor: theme('colors.gray.300'),
+              paddingLeft: '6px',
+              paddingRight: '6px',
               paddingTop: '2px',
               paddingBottom: '2px',
               borderRadius: '0.25rem',
-              fontSize: '85% !important',
+              // fontSize: '80% !important',
               '&::before': {
                 content: `"" !important`,
               },
@@ -84,12 +96,12 @@ module.exports = {
               fontWeight: '600',
             },
             ul: {
-              color: theme('colors.gray.600'),
+              // color: theme('colors.gray.600'),
+              paddingleft: '0',
             },
             a: {
               color: theme('colors.black'),
               fontWeight: 400,
-
               '&:hover': {
                   color: theme('colors.black'),
               },
